@@ -1,0 +1,33 @@
+/* minimal custom CSS - only used bits */
+:root {
+  --dark: #202020;
+  --primary: #ffd700;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* small visual tweaks for dialog backdrop */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* modal close button basic placement */
+#modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* small responsive fix for products grid cards if needed */
+@media (max-width: 640px) {
+  .max-w-6xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
