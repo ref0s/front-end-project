@@ -84,7 +84,7 @@ function populateCategoryTags() {
     updateCategoryTagsUI();
 }
 
-function toggleCategory(category, tagEl) {
+function toggleCategory(category) {
     const idx = selectedCategories.indexOf(category);
     if (idx > -1) selectedCategories.splice(idx, 1);
     else selectedCategories.push(category);
